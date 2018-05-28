@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* =================================
+          BASE
+================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+* {
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+h1, h2, h3 {
+  font-size: 1.5rem;
+  font-family: "Open+Sans", sans-serif; }
+
+/* =================================
+          NAV
+================================== */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+nav ul li a {
+  color: #ff8710; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+#nav-toggle {
+  font-size: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgba(78, 102, 87, 0.5) url("../images/menu-icon.png");
+  position: fixed;
+  top: 10px;
+  right: 10px; }
+
+.sidr-open #nav-toggle {
+  background-position: right; }
+
+#main-nav {
+  display: none; }
+
+.search-form {
+  position: fixed;
+  top: 65px;
+  right: 5px; }
+  .search-form input {
+    opacity: 0;
+    width: 200px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.5s; }
+  .search-form:focus input, .search-form:hover input {
+    opacity: 1;
+    transform: scaleX(1); }
+  .search-form button {
+    cursor: pointer;
+    font-size: 0; }
+    .search-form button i {
+      font-size: 2rem; }
+
+/* =================================
+          SLIDER
+================================== */
+#slider {
+  position: relative; }
+
+#slider-img img {
+  width: 100%; }
+
+/* =================================
+          DESTINATIONS AU TOP
+================================== */
+#destinations h1 {
+  color: #4F6758; }
+
+.sejours h2 {
+  font-size: 1.2rem;
+  color: #F1861F; }
+
+/* =================================
+          NOS AVENTURIERS
+================================== */
+#aventuriers h1 {
+  color: #4F6758; }
+
+/* =================================
+          CAFÉ NOMADE
+================================== */
+#cafe-nomade p {
+  text-align: center;
+  color: #4F6758; }
+
+/* =================================
+          Notre témoin
+================================== */
+#nomade h1, #temoin h1 {
+  font-size: 1.5rem;
+  color: #4F6758;
+  font-weight: bold; }
+
+#invitation p {
+  font-style: italic; }
+
+/* =================================
+          FOOTER
+================================== */
+footer {
+  text-align: justify;
+  background-color: white;
+  padding: 25px;
+  color: #fff; }
+
+footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+#nav-footer {
+  display: flex;
+  align-items: center; }
+
+#nav-footer ul {
+  display: flex;
+  align-items: center;
+  margin-right: 30px; }
+
+#nav-footer ul li a {
+  font-size: 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 48px;
+  background: url("../images/google-plus.svg");
+  background-color: white;
+  background-size: contain;
+  border-radius: 50;
+  margin-left: 30px; }
+
+#nav-footer ul li a.btn-g {
+  background-image: url("../images/insta.svg"); }
+
+#nav-footer ul li a.btn-ins {
+  background-image: url("../images/facebook.svg"); }
+
+ul li a.btn {
+  text-align: right; }
+
+#nav-footer p {
+  text-align: right;
+  color: #ff8710; }
+
+#logo-footer {
+  width: 300px; }
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  #nav-toggle {
+    display: none; }
+
+  #main-nav {
+    display: block;
+    background-color: #4e6657; }
+
+  #main-nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+
+  #main-nav ul a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #ff8710;
+    text-decoration: none; }
+
+  #main-nav ul a:hover {
+    background-color: #4e6657; } }
+@media only screen and (min-width: 768px) {
+  /* =================================
+            DESTINATIONS AU TOP
+  ================================== */
+  .sejours {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .sejours article {
+      flex-basis: 32%; }
+
+  .emile-fang {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .emile-fang article {
+      flex-basis: 44%; }
+
+  .cafe {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; }
+    .cafe article {
+      flex-basis: 44%;
+      align-self: center; }
+
+  #nomade h1 {
+    text-align: center; }
+
+  .temoignage {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    .temoignage article {
+      flex-basis: 44%; } }
+
+/*# sourceMappingURL=styles.css.map */
