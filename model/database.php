@@ -18,6 +18,8 @@ foreach ($files as $file) {
         require_once $entity_dir . $file;
     }
 }
+
+
 function getAllEntity(string $table) {
     /* @var $connection PDO */
     global $connection;
