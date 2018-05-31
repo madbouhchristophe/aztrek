@@ -19,7 +19,7 @@ getHeader($pays["titre"]);
     <h3>
             <?php echo $destination["titre"] ?>
     </h3>
-    <img src="uploads/<?php echo $pays["photo"]; ?>"> 
+    <img src="uploads/<?php echo $destination["photo"]; ?>"> 
 </article>
 </a>
 <?php endforeach; ?>

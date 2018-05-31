@@ -7,15 +7,22 @@
         </a>
     </li>
     <li class="nav-item">
-          <a class="nav-link" href="<?php echo ADMIN_URL; ?>crud/members/">
-            <i class="fa fa-users"></i>
-            Membres
+          <a class="nav-link" href="<?php echo ADMIN_URL; ?>crud/pays/">
+            <i class="fa fa-flag"></i>
+            Pays
+        </a>
+    </li>
+    
+    <li class="nav-item">
+          <a class="nav-link" href="<?php echo ADMIN_URL; ?>crud/commercial/">
+            <i class="fa fa-flag"></i>
+           Commercial
         </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo ADMIN_URL; ?>crud/projects/">
+        <a class="nav-link" href="<?php echo ADMIN_URL; ?>crud/destination/">
             <i class="fa fa-briefcase"></i>
-            Projets
+         Destinations
         </a>
     </li>
 </ul>
