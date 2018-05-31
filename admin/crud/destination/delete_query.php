@@ -5,5 +5,5 @@ require_once '../../../model/database.php';
 
 $id = $_GET["id"];
 
-deleteEntity("destinations", $id);
+deleteEntity("destination", $id);
 
